@@ -1,0 +1,28 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #67DCFF;
+}
+
+.batas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.custom-button {
+  background-color: white; /* Warna latar belakang */
+  border: 1px solid #000; /* Border dengan warna hitam */
+  color: #000; /* Warna teks */
+}
+
+.custom-button:hover {
+  background-color: #ccc; /* Warna latar belakang saat digulirkan */
+}

@@ -1,0 +1,64 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.login-image {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.centered-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.batas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.custom-button {
+  background-color: white; /* Warna latar belakang */
+  border: 1px solid #000; /* Border dengan warna hitam */
+  color: #000; /* Warna teks */
+}
+
+.custom-button:hover {
+  background-color: #ccc; /* Warna latar belakang saat digulirkan */
+}
+
+.smaller-image {
+    max-width: 60%;
+}
+
+@media (max-width: 425px) {
+    .login-image {
+        display: none; /* Sembunyikan gambar pada tampilan mobile */
+    }
+
+    .form-control {
+        font-size: 10px;
+    }
+
+    .login {
+        height: 100vh;
+    }
+}
