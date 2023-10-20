@@ -1,0 +1,25 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #67DCFF;
+}
+
+.batas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .or-divider {
+    height:0.2px;
+    width: 20px;
+    border: 0.8px solid #C5BEBE
+  }
