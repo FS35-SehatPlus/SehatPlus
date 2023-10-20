@@ -124,6 +124,83 @@ a:focus {
   transition: all 0.35s ease;
 }
 
+/* Start Style for PilihDokter */
+.pilih_dokter_section .container {
+  margin-top: -7vh;
+}
+
+.pilih_dokter_section .heading_container {
+  color: #0f0c2b;
+}
+
+.pilih_dokter_section .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 45px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #47a992;
+}
+
+.pilih_dokter_section .box .img-box {
+  width: 100%;
+}
+
+.pilih_dokter_section .box .img-box img {
+  width: 100%;
+}
+
+.pilih_dokter_section .box .detail-box {
+  color: #0f0f0f;
+  width: 100%;
+  padding: 25px 15px;
+  text-align: center;
+  position: relative;
+}
+
+.pilih_dokter_section .box .detail-box .social_box {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 150%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background: #223a66;
+  border-radius: 50px;
+}
+
+.pilih_dokter_section .box .detail-box .social_box:hover {
+  font-weight: bold;
+  background: #178066;
+  color: white;
+}
+
+.pilih_dokter_section .box .detail-box .social_box a {
+  font-weight: bold;
+  color: white;
+  margin: 0 10px;
+}
+
+.pilih_dokter_section .box:hover .social_box {
+  top: 0;
+  opacity: 1;
+}
+/* End PilihDokter Style */
+
 /*header section*/
 .hero_area {
   position: relative;
@@ -136,7 +213,7 @@ a:focus {
   -ms-flex-direction: column;
   flex-direction: column;
 
-  background-color: #45af9b;
+  /* background-color: #5cc6b2; */
 }
 
 .hero_area .hero_bg_box {
@@ -159,7 +236,7 @@ a:focus {
 }
 
 .hero_area .hero_bg_box img {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -178,8 +255,7 @@ a:focus {
 
 .header_section {
   padding: 15px 0;
-
-  background-color: #45af9b;
+  background-color: #03c988;
 }
 
 .header_section .container-fluid {
@@ -442,33 +518,11 @@ a:focus {
   margin-top: -4vh;
 }
 
-.container-about {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 5px;
+/* Start About */
+.section-about {
+  margin-top: 10vh;
+  /* background-color: red; */
 }
-
-.container-about h1 {
-  color: #000000;
-  font-weight: bold;
-  font-size: 24px;
-}
-
-.container-about p {
-  color: #000000;
-  font-size: 16px;
-}
-
-.container-about img {
-  width: 100%;
-  height: auto;
-}
-
-.about-img img {
-  border-radius: 5px;
-  box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
-}
-
 .title-about {
   font-family: Ubuntu;
   font-weight: bold;
@@ -487,6 +541,8 @@ a:focus {
   color: white;
   border-color: #178066;
 }
+
+/* End About */
 
 .department_section .box {
   display: -webkit-box;

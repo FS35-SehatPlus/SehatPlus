@@ -17,7 +17,7 @@ async function fetchData() {
               </div>
               <div class="detail-box">
                 <div class="social_box btn-janji">
-                  <a href="buat-janji.html?doctorId=${doctor.id}">BUAT JANJI <i class="fa fa-arrow-right ml-3"></i></a>
+                  <a href="pilihjadwal.html?doctorId=${doctor.id}">BUAT JANJI <i class="fa fa-arrow-right ml-3"></i></a>
                 </div>
                 <h5 style="font-weight: 900; color: #ffffff;">${doctor.name}</h5>
                 <h6 style="font-weight: 600; color: #ffffff;">${doctor.spesialisasi}</h6>
