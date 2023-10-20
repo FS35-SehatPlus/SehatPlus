@@ -23,32 +23,27 @@ navLinks.forEach((link) => {
 });
 // End Code for add class active and remove class active
 
-// Code to get current year for footer
-function getYear() {
-  let currentDate = new Date();
-  let currentYear = currentDate.getFullYear();
-  document.querySelector("#displayYear").innerHTML = currentYear;
-}
-getYear();
-// End Code to get current year for footer
-
-// Back To  TOP
-const backToTopButton = document.querySelector(".backtop");
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 70) {
-    backToTopButton.classList.add("reveal");
-  } else {
-    backToTopButton.classList.remove("reveal");
-  }
+// Code to give smooth efect when click link and scrolling
+navLinks.forEach((link) => {
+  link.addEventListener("click", smoothScroll);
 });
 
-backToTopButton.addEventListener("click", (e) => {
+footerLinks.forEach((link) => {
+  link.addEventListener("click", smoothScroll);
+});
+
+// Fungsi for smooth scroll
+function smoothScroll(e) {
   e.preventDefault();
-  const target = document.getElementById("top");
 
-  window.scrollTo({
-    top: target.offsetTop,
-    behavior: "smooth", // Animated scroll
-  });
-});
-// End Back To  TOP
+  const targetId = e.target.getAttribute("href").substring(1);
+  const targetElement = document.getElementById(targetId);
+
+  if (targetElement) {
+    targetElement.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+}
+// End Code to give smooth efect when click link and scrolling
