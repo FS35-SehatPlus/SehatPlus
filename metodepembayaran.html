@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metode Pembayaran</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Menyertakan jQuery dan Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-oS4H2eVRHC02UjOK6m8zjSx4bJPhkE2Fyp7xOGbydDJ7z9vl7vZ9cc6vcYD6l5fD" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">SehatPlus</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pilihdokter.html">Konsultasi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Rosyid Mubarak
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row" style="margin-bottom: 100px; margin-top: 50px;">
+            <div class="col-md-12">
+                <h1>Pilih Metode Pembayaran</h1>
+            </div>
+        </div>
+
+        <main>
+            <style>
+                .custom-date-input {
+                    width: 240px;
+                    height: 40px;
+                    font-size: 16px;
+                }
+
+                .calendar h4 {
+                    margin-top: 20px;
+                    /* Ganti nilai ini sesuai dengan jarak atas yang Anda inginkan */
+                }
+            </style>
+            <div class="col-md-4 my-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="mb-5">Ringkasan Biaya Pelayanan</h5>
+                        <p class="mb-2">Biaya pelayanan: Rp 2.000</p>
+                        <p class="mb-2">Potongan harga pelayanan: Rp 2.500</p>
+                        <p class="mb-2">Total biaya: Rp 22.500</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <input type="radio" name="metode_pembayaran" value="transfer_virtual_account">
+                                        Transfer Virtual Account
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input type="radio" name="metode_pembayaran" value="kartu_kredit"> Kartu Kredit
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input type="radio" name="metode_pembayaran" value="debit_online"> Debit Online
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input type="radio" name="metode_pembayaran" value="e-wallet"> E-Wallet
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn btn-primary mt-3" data-toggle="modal"
+                                    data-target="#exampleModal">
+                                    Pembayaran
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Silakan pilih metode pembayaran yang Anda inginkan dan klik tombol "Pembayaran" untuk melanjutkan
+                    </p>
+                </div>
+            </div>
+        </main>
+
+
+
+        <!-- Modal Pembayaran -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Pembayaran</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                        <button type="button" class="btn btn-primary">Simpan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer bg-light text-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>SehatPlus</h2>
+                        <p>Kamu lagi sakit? SehatPlus solusinya. tanpa antri, tanpa ribet, konsulin aja!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Site Map</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="text-decoration: none; color: black;">Home</a></li>
+                            <li><a href="#" style="text-decoration: none; color: black;">Artikel</a></li>
+                            <li><a href="#" style="text-decoration: none; color: black;">Syarat & Ketentuan</a></li>
+                            <li><a href="#" style="text-decoration: none; color: black;">Kebijakan Privasi</a></li>
+                            <li><a href="#" style="text-decoration: none; color: black;">Contact Us</a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Kontak Kami</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="text-decoration: none; color: black;">help@sehatplus.com</a></li>
+                            <li><a href="#" style="text-decoration: none; color: black;">849 EFremon St<br>East
+                                    Kalimantan, 94187</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p class="text-center">Copyright © 2023 SehatPlus</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
